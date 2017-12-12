@@ -1,0 +1,768 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7201DD871FDF8A6B0088A878 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7201DD861FDF8A6B0088A878 /* AppDelegate.swift */; };
+		7201DD891FDF8A6B0088A878 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7201DD881FDF8A6B0088A878 /* ViewController.swift */; };
+		7201DD8C1FDF8A6B0088A878 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7201DD8A1FDF8A6B0088A878 /* Main.storyboard */; };
+		7201DD8E1FDF8A6B0088A878 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7201DD8D1FDF8A6B0088A878 /* Assets.xcassets */; };
+		7201DD911FDF8A6B0088A878 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7201DD8F1FDF8A6B0088A878 /* LaunchScreen.storyboard */; };
+		7201DD9C1FDF8A6B0088A878 /* DeffieHelmanKeyExchangeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7201DD9B1FDF8A6B0088A878 /* DeffieHelmanKeyExchangeTests.swift */; };
+		7201DDA71FDF8A6B0088A878 /* DeffieHelmanKeyExchangeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7201DDA61FDF8A6B0088A878 /* DeffieHelmanKeyExchangeUITests.swift */; };
+		7201DDB51FDF8B110088A878 /* DHKeyExchangeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7201DDB41FDF8B110088A878 /* DHKeyExchangeManager.swift */; };
+		847486593C37D2127DC0DD57 /* Pods_DeffieHelmanKeyExchangeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C953C7FD00B847CBDC489A /* Pods_DeffieHelmanKeyExchangeUITests.framework */; };
+		AD08BCEBFB12DFB080B045DB /* Pods_DeffieHelmanKeyExchange.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1133DC00AA8C4EDA0399CDF /* Pods_DeffieHelmanKeyExchange.framework */; };
+		F30BD6493D4C1A0BE6D739B7 /* Pods_DeffieHelmanKeyExchangeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2897AF33E69A34B6BF38454F /* Pods_DeffieHelmanKeyExchangeTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7201DD981FDF8A6B0088A878 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7201DD7B1FDF8A6B0088A878 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7201DD821FDF8A6B0088A878;
+			remoteInfo = DeffieHelmanKeyExchange;
+		};
+		7201DDA31FDF8A6B0088A878 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7201DD7B1FDF8A6B0088A878 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7201DD821FDF8A6B0088A878;
+			remoteInfo = DeffieHelmanKeyExchange;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2897AF33E69A34B6BF38454F /* Pods_DeffieHelmanKeyExchangeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeffieHelmanKeyExchangeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4575FF9FB776869608ABA56F /* Pods-DeffieHelmanKeyExchangeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeffieHelmanKeyExchangeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DeffieHelmanKeyExchangeTests/Pods-DeffieHelmanKeyExchangeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		68C953C7FD00B847CBDC489A /* Pods_DeffieHelmanKeyExchangeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeffieHelmanKeyExchangeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7201DD831FDF8A6B0088A878 /* DeffieHelmanKeyExchange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeffieHelmanKeyExchange.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7201DD861FDF8A6B0088A878 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7201DD881FDF8A6B0088A878 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7201DD8B1FDF8A6B0088A878 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7201DD8D1FDF8A6B0088A878 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7201DD901FDF8A6B0088A878 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7201DD921FDF8A6B0088A878 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7201DD971FDF8A6B0088A878 /* DeffieHelmanKeyExchangeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeffieHelmanKeyExchangeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7201DD9B1FDF8A6B0088A878 /* DeffieHelmanKeyExchangeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeffieHelmanKeyExchangeTests.swift; sourceTree = "<group>"; };
+		7201DD9D1FDF8A6B0088A878 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7201DDA21FDF8A6B0088A878 /* DeffieHelmanKeyExchangeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeffieHelmanKeyExchangeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7201DDA61FDF8A6B0088A878 /* DeffieHelmanKeyExchangeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeffieHelmanKeyExchangeUITests.swift; sourceTree = "<group>"; };
+		7201DDA81FDF8A6B0088A878 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7201DDB41FDF8B110088A878 /* DHKeyExchangeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DHKeyExchangeManager.swift; sourceTree = "<group>"; };
+		950E59FB1B37233D64281ED5 /* Pods-DeffieHelmanKeyExchange.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeffieHelmanKeyExchange.release.xcconfig"; path = "Pods/Target Support Files/Pods-DeffieHelmanKeyExchange/Pods-DeffieHelmanKeyExchange.release.xcconfig"; sourceTree = "<group>"; };
+		AF5480CB202F795995E88BDF /* Pods-DeffieHelmanKeyExchange.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeffieHelmanKeyExchange.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DeffieHelmanKeyExchange/Pods-DeffieHelmanKeyExchange.debug.xcconfig"; sourceTree = "<group>"; };
+		B0F7392C36849406B859BC52 /* Pods-DeffieHelmanKeyExchangeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeffieHelmanKeyExchangeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DeffieHelmanKeyExchangeTests/Pods-DeffieHelmanKeyExchangeTests.release.xcconfig"; sourceTree = "<group>"; };
+		BD204184B1D37C5935E8CDAE /* Pods-DeffieHelmanKeyExchangeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeffieHelmanKeyExchangeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DeffieHelmanKeyExchangeUITests/Pods-DeffieHelmanKeyExchangeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D1133DC00AA8C4EDA0399CDF /* Pods_DeffieHelmanKeyExchange.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeffieHelmanKeyExchange.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBB25C708B1FCAA026E828AF /* Pods-DeffieHelmanKeyExchangeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeffieHelmanKeyExchangeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DeffieHelmanKeyExchangeUITests/Pods-DeffieHelmanKeyExchangeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7201DD801FDF8A6B0088A878 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD08BCEBFB12DFB080B045DB /* Pods_DeffieHelmanKeyExchange.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7201DD941FDF8A6B0088A878 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F30BD6493D4C1A0BE6D739B7 /* Pods_DeffieHelmanKeyExchangeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7201DD9F1FDF8A6B0088A878 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				847486593C37D2127DC0DD57 /* Pods_DeffieHelmanKeyExchangeUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7201DD7A1FDF8A6B0088A878 = {
+			isa = PBXGroup;
+			children = (
+				7201DD851FDF8A6B0088A878 /* DeffieHelmanKeyExchange */,
+				7201DD9A1FDF8A6B0088A878 /* DeffieHelmanKeyExchangeTests */,
+				7201DDA51FDF8A6B0088A878 /* DeffieHelmanKeyExchangeUITests */,
+				7201DD841FDF8A6B0088A878 /* Products */,
+				91956C4B61C41444C67E7630 /* Pods */,
+				BD17CD43718B2A8159A436A4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7201DD841FDF8A6B0088A878 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7201DD831FDF8A6B0088A878 /* DeffieHelmanKeyExchange.app */,
+				7201DD971FDF8A6B0088A878 /* DeffieHelmanKeyExchangeTests.xctest */,
+				7201DDA21FDF8A6B0088A878 /* DeffieHelmanKeyExchangeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7201DD851FDF8A6B0088A878 /* DeffieHelmanKeyExchange */ = {
+			isa = PBXGroup;
+			children = (
+				7201DDB41FDF8B110088A878 /* DHKeyExchangeManager.swift */,
+				7201DD861FDF8A6B0088A878 /* AppDelegate.swift */,
+				7201DD881FDF8A6B0088A878 /* ViewController.swift */,
+				7201DD8A1FDF8A6B0088A878 /* Main.storyboard */,
+				7201DD8D1FDF8A6B0088A878 /* Assets.xcassets */,
+				7201DD8F1FDF8A6B0088A878 /* LaunchScreen.storyboard */,
+				7201DD921FDF8A6B0088A878 /* Info.plist */,
+			);
+			path = DeffieHelmanKeyExchange;
+			sourceTree = "<group>";
+		};
+		7201DD9A1FDF8A6B0088A878 /* DeffieHelmanKeyExchangeTests */ = {
+			isa = PBXGroup;
+			children = (
+				7201DD9B1FDF8A6B0088A878 /* DeffieHelmanKeyExchangeTests.swift */,
+				7201DD9D1FDF8A6B0088A878 /* Info.plist */,
+			);
+			path = DeffieHelmanKeyExchangeTests;
+			sourceTree = "<group>";
+		};
+		7201DDA51FDF8A6B0088A878 /* DeffieHelmanKeyExchangeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7201DDA61FDF8A6B0088A878 /* DeffieHelmanKeyExchangeUITests.swift */,
+				7201DDA81FDF8A6B0088A878 /* Info.plist */,
+			);
+			path = DeffieHelmanKeyExchangeUITests;
+			sourceTree = "<group>";
+		};
+		91956C4B61C41444C67E7630 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF5480CB202F795995E88BDF /* Pods-DeffieHelmanKeyExchange.debug.xcconfig */,
+				950E59FB1B37233D64281ED5 /* Pods-DeffieHelmanKeyExchange.release.xcconfig */,
+				4575FF9FB776869608ABA56F /* Pods-DeffieHelmanKeyExchangeTests.debug.xcconfig */,
+				B0F7392C36849406B859BC52 /* Pods-DeffieHelmanKeyExchangeTests.release.xcconfig */,
+				DBB25C708B1FCAA026E828AF /* Pods-DeffieHelmanKeyExchangeUITests.debug.xcconfig */,
+				BD204184B1D37C5935E8CDAE /* Pods-DeffieHelmanKeyExchangeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BD17CD43718B2A8159A436A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D1133DC00AA8C4EDA0399CDF /* Pods_DeffieHelmanKeyExchange.framework */,
+				2897AF33E69A34B6BF38454F /* Pods_DeffieHelmanKeyExchangeTests.framework */,
+				68C953C7FD00B847CBDC489A /* Pods_DeffieHelmanKeyExchangeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7201DD821FDF8A6B0088A878 /* DeffieHelmanKeyExchange */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7201DDAB1FDF8A6B0088A878 /* Build configuration list for PBXNativeTarget "DeffieHelmanKeyExchange" */;
+			buildPhases = (
+				072A66B68C10046EA821C08D /* [CP] Check Pods Manifest.lock */,
+				7201DD7F1FDF8A6B0088A878 /* Sources */,
+				7201DD801FDF8A6B0088A878 /* Frameworks */,
+				7201DD811FDF8A6B0088A878 /* Resources */,
+				E876B0DCE9E0F637B714BE6C /* [CP] Embed Pods Frameworks */,
+				53A829F4655F7AE113DDDDF2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeffieHelmanKeyExchange;
+			productName = DeffieHelmanKeyExchange;
+			productReference = 7201DD831FDF8A6B0088A878 /* DeffieHelmanKeyExchange.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7201DD961FDF8A6B0088A878 /* DeffieHelmanKeyExchangeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7201DDAE1FDF8A6B0088A878 /* Build configuration list for PBXNativeTarget "DeffieHelmanKeyExchangeTests" */;
+			buildPhases = (
+				648215035D2F9CFBF33C6F5A /* [CP] Check Pods Manifest.lock */,
+				7201DD931FDF8A6B0088A878 /* Sources */,
+				7201DD941FDF8A6B0088A878 /* Frameworks */,
+				7201DD951FDF8A6B0088A878 /* Resources */,
+				155DB910B28B0ACDDBFAC1AF /* [CP] Embed Pods Frameworks */,
+				CE90BB783F4AC0161B9D6243 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7201DD991FDF8A6B0088A878 /* PBXTargetDependency */,
+			);
+			name = DeffieHelmanKeyExchangeTests;
+			productName = DeffieHelmanKeyExchangeTests;
+			productReference = 7201DD971FDF8A6B0088A878 /* DeffieHelmanKeyExchangeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7201DDA11FDF8A6B0088A878 /* DeffieHelmanKeyExchangeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7201DDB11FDF8A6B0088A878 /* Build configuration list for PBXNativeTarget "DeffieHelmanKeyExchangeUITests" */;
+			buildPhases = (
+				870345786754FA4489CCB526 /* [CP] Check Pods Manifest.lock */,
+				7201DD9E1FDF8A6B0088A878 /* Sources */,
+				7201DD9F1FDF8A6B0088A878 /* Frameworks */,
+				7201DDA01FDF8A6B0088A878 /* Resources */,
+				47A25FE8499E6BE3046C7B04 /* [CP] Embed Pods Frameworks */,
+				0D36BA2B05264472D52BD809 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7201DDA41FDF8A6B0088A878 /* PBXTargetDependency */,
+			);
+			name = DeffieHelmanKeyExchangeUITests;
+			productName = DeffieHelmanKeyExchangeUITests;
+			productReference = 7201DDA21FDF8A6B0088A878 /* DeffieHelmanKeyExchangeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7201DD7B1FDF8A6B0088A878 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = AK;
+				TargetAttributes = {
+					7201DD821FDF8A6B0088A878 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					7201DD961FDF8A6B0088A878 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7201DD821FDF8A6B0088A878;
+					};
+					7201DDA11FDF8A6B0088A878 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7201DD821FDF8A6B0088A878;
+					};
+				};
+			};
+			buildConfigurationList = 7201DD7E1FDF8A6B0088A878 /* Build configuration list for PBXProject "DeffieHelmanKeyExchange" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7201DD7A1FDF8A6B0088A878;
+			productRefGroup = 7201DD841FDF8A6B0088A878 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7201DD821FDF8A6B0088A878 /* DeffieHelmanKeyExchange */,
+				7201DD961FDF8A6B0088A878 /* DeffieHelmanKeyExchangeTests */,
+				7201DDA11FDF8A6B0088A878 /* DeffieHelmanKeyExchangeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7201DD811FDF8A6B0088A878 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7201DD911FDF8A6B0088A878 /* LaunchScreen.storyboard in Resources */,
+				7201DD8E1FDF8A6B0088A878 /* Assets.xcassets in Resources */,
+				7201DD8C1FDF8A6B0088A878 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7201DD951FDF8A6B0088A878 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7201DDA01FDF8A6B0088A878 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		072A66B68C10046EA821C08D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DeffieHelmanKeyExchange-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0D36BA2B05264472D52BD809 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DeffieHelmanKeyExchangeUITests/Pods-DeffieHelmanKeyExchangeUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		155DB910B28B0ACDDBFAC1AF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DeffieHelmanKeyExchangeTests/Pods-DeffieHelmanKeyExchangeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		47A25FE8499E6BE3046C7B04 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DeffieHelmanKeyExchangeUITests/Pods-DeffieHelmanKeyExchangeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		53A829F4655F7AE113DDDDF2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DeffieHelmanKeyExchange/Pods-DeffieHelmanKeyExchange-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		648215035D2F9CFBF33C6F5A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DeffieHelmanKeyExchangeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		870345786754FA4489CCB526 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DeffieHelmanKeyExchangeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE90BB783F4AC0161B9D6243 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DeffieHelmanKeyExchangeTests/Pods-DeffieHelmanKeyExchangeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E876B0DCE9E0F637B714BE6C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DeffieHelmanKeyExchange/Pods-DeffieHelmanKeyExchange-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BigInt/BigInt.framework",
+				"${BUILT_PRODUCTS_DIR}/SipHash/SipHash.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BigInt.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SipHash.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DeffieHelmanKeyExchange/Pods-DeffieHelmanKeyExchange-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7201DD7F1FDF8A6B0088A878 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7201DD891FDF8A6B0088A878 /* ViewController.swift in Sources */,
+				7201DD871FDF8A6B0088A878 /* AppDelegate.swift in Sources */,
+				7201DDB51FDF8B110088A878 /* DHKeyExchangeManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7201DD931FDF8A6B0088A878 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7201DD9C1FDF8A6B0088A878 /* DeffieHelmanKeyExchangeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7201DD9E1FDF8A6B0088A878 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7201DDA71FDF8A6B0088A878 /* DeffieHelmanKeyExchangeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7201DD991FDF8A6B0088A878 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7201DD821FDF8A6B0088A878 /* DeffieHelmanKeyExchange */;
+			targetProxy = 7201DD981FDF8A6B0088A878 /* PBXContainerItemProxy */;
+		};
+		7201DDA41FDF8A6B0088A878 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7201DD821FDF8A6B0088A878 /* DeffieHelmanKeyExchange */;
+			targetProxy = 7201DDA31FDF8A6B0088A878 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7201DD8A1FDF8A6B0088A878 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7201DD8B1FDF8A6B0088A878 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7201DD8F1FDF8A6B0088A878 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7201DD901FDF8A6B0088A878 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7201DDA91FDF8A6B0088A878 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7201DDAA1FDF8A6B0088A878 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7201DDAC1FDF8A6B0088A878 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF5480CB202F795995E88BDF /* Pods-DeffieHelmanKeyExchange.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DeffieHelmanKeyExchange/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = my.com.AK.DeffieHelmanKeyExchange;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7201DDAD1FDF8A6B0088A878 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 950E59FB1B37233D64281ED5 /* Pods-DeffieHelmanKeyExchange.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DeffieHelmanKeyExchange/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = my.com.AK.DeffieHelmanKeyExchange;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7201DDAF1FDF8A6B0088A878 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4575FF9FB776869608ABA56F /* Pods-DeffieHelmanKeyExchangeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DeffieHelmanKeyExchangeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = my.com.AK.DeffieHelmanKeyExchangeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeffieHelmanKeyExchange.app/DeffieHelmanKeyExchange";
+			};
+			name = Debug;
+		};
+		7201DDB01FDF8A6B0088A878 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0F7392C36849406B859BC52 /* Pods-DeffieHelmanKeyExchangeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DeffieHelmanKeyExchangeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = my.com.AK.DeffieHelmanKeyExchangeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeffieHelmanKeyExchange.app/DeffieHelmanKeyExchange";
+			};
+			name = Release;
+		};
+		7201DDB21FDF8A6B0088A878 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBB25C708B1FCAA026E828AF /* Pods-DeffieHelmanKeyExchangeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DeffieHelmanKeyExchangeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = my.com.AK.DeffieHelmanKeyExchangeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DeffieHelmanKeyExchange;
+			};
+			name = Debug;
+		};
+		7201DDB31FDF8A6B0088A878 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD204184B1D37C5935E8CDAE /* Pods-DeffieHelmanKeyExchangeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DeffieHelmanKeyExchangeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = my.com.AK.DeffieHelmanKeyExchangeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DeffieHelmanKeyExchange;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7201DD7E1FDF8A6B0088A878 /* Build configuration list for PBXProject "DeffieHelmanKeyExchange" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7201DDA91FDF8A6B0088A878 /* Debug */,
+				7201DDAA1FDF8A6B0088A878 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7201DDAB1FDF8A6B0088A878 /* Build configuration list for PBXNativeTarget "DeffieHelmanKeyExchange" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7201DDAC1FDF8A6B0088A878 /* Debug */,
+				7201DDAD1FDF8A6B0088A878 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7201DDAE1FDF8A6B0088A878 /* Build configuration list for PBXNativeTarget "DeffieHelmanKeyExchangeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7201DDAF1FDF8A6B0088A878 /* Debug */,
+				7201DDB01FDF8A6B0088A878 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7201DDB11FDF8A6B0088A878 /* Build configuration list for PBXNativeTarget "DeffieHelmanKeyExchangeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7201DDB21FDF8A6B0088A878 /* Debug */,
+				7201DDB31FDF8A6B0088A878 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7201DD7B1FDF8A6B0088A878 /* Project object */;
+}
