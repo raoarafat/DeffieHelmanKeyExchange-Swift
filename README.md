@@ -1,5 +1,6 @@
 # DeffieHelmanKeyExchange-Swift
-To Generate Public, Private &amp; Crypto Shared Key by using Diffie-Helman Algorithm.
+To Generate Public, Private & Crypto Shared Key by using Diffie-Helman Algorithm.
+It accepts maximum number of String Integers. 
 
 Just Download and Use.
 Example Code:
